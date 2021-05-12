@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body link="#db8400" alink="green" vlink="blue">
+  <div class="common">
+    <div class="navbar">
+      <h3>To Do List</h3>
+    </div>
+    <div class="container">
+      <div class="conditions">
+        <div class="Bcolor future">
+          <h3>Ожидает выполнения</h3>
+        </div>
+        <div class="Bcolor now">
+          <h3>Выполняется</h3>
+        </div>
+        <div class="Bcolor past">
+          <h3>Выполненно</h3>
+        </div>
+      </div>
+      {% for el in list %}
+      <div class="tasklist">
+        <div class="Tcolor future" style="{{ el.priority.id }}">
+          <h2>{{ el.title }}</h2>
+          <p>{{ el.description }}</p>
+          <span>{{ el.data_end }}</span>
+        </div>
+        <div class="Tcolor now" style="{{ el.priority.id }}">
+          <h2>{{ el.title }}</h2>
+          <p>{{ el.description }}</p>
+          <span>{{ el.data_end }}</span>
+        </div>
+        <div class="Tcolor past" style="{{ el.priority.id }}">
+          <h2>{{ el.title }}</h2>
+          <p>{{ el.description }}</p>
+          <span>{{ el.data_end }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

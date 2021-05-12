@@ -1,0 +1,52 @@
+body {
+    background: #90AFC5;
+    color: #fff;
+}
+
+body .navbar {
+    background: #336B87;
+    line-height: 120px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+body .Bcolor {
+     float: left; /*Задаем обтекание*/
+     line-height: 80px;/*Высота строки +  верт. центрирования текста*/
+     font-size: 28px;
+     background: dodgerblue;
+     color: white;
+     margin-top: 60px;
+     width: 420px; /*Фиксируем ширину блока*/
+     margin-right: 10px;
+     text-align: center; /*Центрируем текст по горизонтали*/
+    }
+
+body .Tcolor {
+     float: left; /*Задаем обтекание*/
+     height: 400px;/*Высота строки +  верт. центрирования текста*/
+     font-size: 28px;
+     background: white;
+     color: dodgerblue;
+     margin-top: 60px;
+     width: 420px; /*Фиксируем ширину блока*/
+     margin-right: 10px;
+     text-align: center; /*Центрируем текст по горизонтали*/
+    }
+
+body .container {
+         width: 1300px;/*фиксируем ширину обертки*/
+         margin: 0 auto;/*центрируем ее*/
+         background: darkgray;
+         height: 1310px;/*Задаем высоту обертки*/
+}
+
+.name {
+    height: 50px;
+
+}
+
