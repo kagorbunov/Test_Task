@@ -27,21 +27,21 @@
       <div class="tasklist">
         {% if el.step.id == 1 %}
         <div class="Tcolor future" style="{{ el.priority.id }}">
-          <h2>{{ el.title }}</h2>
+          <h2 class="name">{{ el.title }}</h2>
           <p>{{ el.description }}</p>
           <span>{{ el.data_end }}</span>
         </div>
         {% endif %}
         {% if el.step.id == 2 %}
         <div class="Tcolor now" style="{{ el.priority.id }}">
-          <h2>{{ el.title }}</h2>
+          <h2 class="name">{{ el.title }}</h2>
           <p>{{ el.description }}</p>
           <span>{{ el.data_end }}</span>
         </div>
         {% endif %}
         {% if el.step.id == 3 %}
         <div class="Tcolor past" style="{{ el.priority.id }}">
-          <h2>{{ el.title }}</h2>
+          <h2 class="name">{{ el.title }}</h2>
           <p>{{ el.description }}</p>
           <span>{{ el.data_end }}</span>
         </div>

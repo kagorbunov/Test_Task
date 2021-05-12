@@ -19,11 +19,11 @@ def main(request):
     list = todo.objects.all()
     for el in list:
         if el.priority.id == 1:
-            el.priority.id = 'border-top: 5px solid red'
+            el.priority.id = 'border-top: 10px solid red'
         elif el.priority.id == 3:
-            el.priority.id = 'border-top: 5px solid green'
+            el.priority.id = 'border-top: 10px solid green'
         elif el.priority.id == 2:
-            el.priority.id = 'border-top: 5px solid orange'
+            el.priority.id = 'border-top: 10px solid orange'
     data = {
         'list': list,
     }

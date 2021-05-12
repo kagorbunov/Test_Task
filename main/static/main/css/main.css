@@ -3,6 +3,7 @@ body {
     color: #fff;
 }
 
+
 body .navbar {
     background: #336B87;
     line-height: 120px;
@@ -18,7 +19,7 @@ body .Bcolor {
      float: left; /*Задаем обтекание*/
      line-height: 80px;/*Высота строки +  верт. центрирования текста*/
      font-size: 28px;
-     background: dodgerblue;
+     background: #336B87;
      color: white;
      margin-top: 60px;
      width: 420px; /*Фиксируем ширину блока*/
@@ -28,10 +29,10 @@ body .Bcolor {
 
 body .Tcolor {
      float: left; /*Задаем обтекание*/
-     height: 400px;/*Высота строки +  верт. центрирования текста*/
+     height: 480px;/*Высота строки +  верт. центрирования текста*/
      font-size: 28px;
      background: white;
-     color: dodgerblue;
+     color: #336B87;
      margin-top: 60px;
      width: 420px; /*Фиксируем ширину блока*/
      margin-right: 10px;
@@ -41,12 +42,12 @@ body .Tcolor {
 body .container {
          width: 1300px;/*фиксируем ширину обертки*/
          margin: 0 auto;/*центрируем ее*/
-         background: darkgray;
+         background: #90AFC5;
          height: 1310px;/*Задаем высоту обертки*/
 }
 
-.name {
-    height: 50px;
-
+body .Tcolor > span {
+    background: #336B87;
+    color: #fff;
 }
 
